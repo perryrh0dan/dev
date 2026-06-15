@@ -12,18 +12,18 @@ import (
 type Config struct {
 	Image                  string   `json:"image"`
 	Memory                 string   `json:"memory"`
-	SSHDirectory           string   `json:"ssh_directory"`
-	GPGDirectory           string   `json:"gpg_directory"`
-	SharedDirectory        string   `json:"shared_directory"`
-	KubeDirectory          string   `json:"kube_directory"`
-	TimewarriorDirectory   string   `json:"timewarrior_directory"`
-	OpenCodeDirectory      string   `json:"opencode_directory"`
-	EnvFile                string   `json:"env_file"`
-	DictFile               string   `json:"dict_file"`
-	NgrokDirectory         string   `json:"ngrok_directory"`
-	NpmFile                string   `json:"npm_file"`
-	GitHubCopilotDirectory string   `json:"github_copilot_directory"`
-	RemoteDevEnv           []string `json:"remote_dev_env"`
+	SSHDirectory           string   `json:"sshDirectory"`
+	GPGDirectory           string   `json:"gpgDirectory"`
+	SharedDirectory        string   `json:"sharedDirectory"`
+	KubeDirectory          string   `json:"kubeDirectory"`
+	TimewarriorDirectory   string   `json:"timewarriorDirectory"`
+	OpenCodeDirectory      string   `json:"opencodeDirectory"`
+	EnvFile                string   `json:"envFile"`
+	DictFile               string   `json:"dictFile"`
+	NgrokDirectory         string   `json:"ngrokDirectory"`
+	NpmFile                string   `json:"npmFile"`
+	GitHubCopilotDirectory string   `json:"githubCopilotDirectory"`
+	RemoteDevEnv           []string `json:"remoteDevEnv"`
 }
 
 // Load reads ~/.config/dev/config.json and applies environment variable overrides.
