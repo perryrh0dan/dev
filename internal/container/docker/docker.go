@@ -59,7 +59,7 @@ func (e *Engine) RunInteractive(opts container.RunOptions) error {
 		args = append(args, "--mount", buildMountFlag(m))
 	}
 	for _, p := range opts.Ports {
-		args = append(args, "-p", p)
+		args = append(args, "-p", fmt.Sprintf("%s:%s", p, p))
 	}
 	for _, env := range opts.Env {
 		args = append(args, "-e", env)
